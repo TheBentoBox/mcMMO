@@ -316,6 +316,7 @@ public class PotionConfig extends LegacyConfigLoader {
         final String configuredName = section.getString("Name", null);
         if (configuredName != null) {
             setItemName(potionMeta, configuredName);
+            potionMeta.setDisplayName(ChatColor.RESET + configuredName);
         }
     }
 
